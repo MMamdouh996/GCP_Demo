@@ -22,7 +22,7 @@ serviceaccount"
 
 ---
 ## 5.Using gcloud,
-1. I. List all roles on your project.
+1. List all roles on your project.
 ```bash
 $ gcloud iam roles list --project mm-iti-cairo-2023 
 ---
@@ -37,7 +37,7 @@ stage: BETA
 title: my-custom-role-1
 ```
 ---
-2. II. Describe the predefined role "roles/compute.viewer" and view its details & permissions
+2. Describe the predefined role "roles/compute.viewer" and view its details & permissions
 ```bash
 $ gcloud iam roles describe roles/compute.viewer
 description: Read-only access to get and list information about all Compute Engine
@@ -77,7 +77,7 @@ stage: BETA
 title: my-custom-role-1
 ```
 ---
-4. IV. List all authenticated accounts.
+4. List all authenticated accounts.
 ```bash
 $ gcloud auth list
         Credentialed Accounts
@@ -88,7 +88,7 @@ To set the active account, run:
     $ gcloud config set account `ACCOUNT`
 ```
 ---
-5. V. Activate the service account "my-first-serviceaccount".
+5. Activate the service account "my-first-serviceaccount".
 ```bash
 $ gcloud auth activate-service-account --key-file=/media/mmamdouh/new-Partation/iti-newpart/GCP/Day1/mm-iti-cairo-2023-3d6038aa7725.json
 Activated service account credentials for: [my-first-serviceaccount@mm-iti-cairo-2023.iam.gserviceaccount.com]
