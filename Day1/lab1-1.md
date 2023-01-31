@@ -26,24 +26,24 @@ NAME: My First Project
 ### 8.Install and configure gcloud SDK on your pc.
 1. Download the Google Cloud SDK package by running the following command
 ```bash
-curl https://sdk.cloud.google.com | bash
+$ curl https://sdk.cloud.google.com | bash
 ```
 2. Add the Cloud SDK distribution URI as a package source by running the following command
 ```bash
-echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+$ echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
 ```
 3. Import the Google Cloud public key by running the following command:
 ```bash
-sudo apt-get install apt-transport-https ca-certificates gnupg
-curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+$ sudo apt-get install apt-transport-https ca-certificates gnupg
+$ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
 ```
 4. Update and install the Cloud SDK by running the following command:
 ```bash
-sudo apt-get update && sudo apt-get install google-cloud-sdk
+$ sudo apt-get update && sudo apt-get install google-cloud-sdk
 ```
 5. to initialize the SDK and set up your credentials.
 ```bash
-gcloud init
+$ gcloud init
 ```
 6. to verfiy the installation of gcloud:
 ```bash

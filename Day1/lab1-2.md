@@ -16,8 +16,8 @@
 
 ---
 ## 3- From Cloud console, Create a service account with id "my-first-serviceaccount".
-## 4- From Cloud console, Assign the custom role "my-custom-role-1" to the service account "my-first-
-serviceaccount" 
+## 4- From Cloud console, Assign the custom role "my-custom-role-1" to the service account "my-first-serviceaccount" 
+
 ![Lab1-2 q3](1-2-q3.png "Lab1-2 q3")
 
 ---
