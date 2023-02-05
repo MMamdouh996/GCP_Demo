@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mm-iti-cairo-2023",
+  "private_key_id": "53e3eb213975bf3e150d284c287204315296bf90",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCIMyOk7YXD9KFu\nJX5uvE7dWgrEmv4ggPLKYNRrp+wBVRxIqwqkpW4LLf4paSBjKlkKPEQlmqIfCVrc\nz3nWs2MDLb1SC65iSrfKTmlMxP0muNKefhotqArc33mHbfVmPPROUYYQK60TZMxZ\npLWyf5n+JG/MWEbtKEwWr8vf4tXiJHd4Rz5cQd4G2rihNIdchXVx+fRF2RRFGuu5\nHHlOfw/JecUf22wARgsuifQ8fmdNqq03dYpZ13b0r5Vd0WaIQhL4Mv0UuupONGhR\npSFp6Oo9B4z3b62FzyRSmuMYRseR3hVyGReC98n2ZXoXjLXcos7SXkUhIRgbec7w\nuigQtCJRAgMBAAECggEABLpqwbxdrQ9yZbefP6KhpcFNF6VuTkxPsWsiYLDiCmtN\nGbA3ZL8Z9oEknkUoIs0q7WYpcvk+6M8rNHhu6T9NwAPf20fsyDyCDB/D+85oX+Zh\naG9mAwD/DIslBcixUNjrncbqfaf4gJB6oB+Nz7oqi0YyS+CiKLRCDPUSIa33IRw4\nQw+iJtsGBQJo4C7Y0yajsUoNg3W/nFA2pbzav9uoNo8DPDv6DnD61C+eUjKbabIn\nv0eMjiVKnoldsm63s3N3QTxdOOeZrgEqohC9EnbH9LwK6c7kjEbFBcfkacgNDbki\nx/iLoNFOfATiNJ+MjQLcoWePpKrSVasefiS0hZErqQKBgQC65e6eqibTLjy67Gkb\ngwOQs6pjNfJa1u4+baPryKTxoMnZuzzH7H5wKwQPCFb98Hx98orkInEQh/4MWh7N\nQJDfjNH81vPLaVLXUOTL+0RnMEfAZGgsEIsCRJP5fFod4MPGEx+o2xvpyQeZxHdi\naROumuLDUdlYa7KtDyg33fGSWQKBgQC6jo90OLe21Myk39KxLVNiMtdYhMukFikU\npq7qhqLZCFNzP7BYKak49f+O5HgFSM5veE40/4IbVgIPYzWvYrTnq4CuLtxOsJN2\nDl3j509iblHDyUzrXR9q3U0Banmy36a1PzwXB/Wb7K6K9lnm9cUl9Ba5jWcrjbBp\nvRdFgEBguQKBgQC4peo2P4zUH15InsDJOYsQLzEri2TBco82hkPo8vZi8qP5xQ6r\nxm60iwsbfvXTNQEJvdKSyaRC3NiVg4Pi7OM0uX/M+OEsGgaKS5WAIeLWv9Bjt89j\nmYR83RwE5GJ0GlfRHZuty6usMbycoooAZCfZ3ZQjvH2q6dxBNjRZ3aCJIQKBgBDE\nMzxcxJYX9fRzcTofOrk+nIAGH0819qc2e830H7qltupKtQyXYfAOm9M50VeYPYVj\nKJQ2yniueCzt26tRkbSogz4kVAR2dipMDEApT8cm5w5TjygwDFzMWtlfumRLGW58\nqmfffUFwOhefIGFTgU5x64DtpnIRn+NA7VB/wElxAoGBAI3AKmzZQ8Ep1hJq7KPp\nDQEHBvdZtB3VHhrG6iOGn3ypGTysRF8LAnlna3Bf3t+qJ5WHoReVb2QJ4XxNxPcu\nWws+BMUgsr6uU5VO3lhFRiE6Te+rcggkUNA2r0NqzioqbO14+pOmAfTix7ntFBGI\nWcT1awtGaj/RuGvwygSBQTes\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform-sa@mm-iti-cairo-2023.iam.gserviceaccount.com",
+  "client_id": "102080108143192783981",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform-sa%40mm-iti-cairo-2023.iam.gserviceaccount.com"
+}
