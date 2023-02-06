@@ -191,3 +191,141 @@ Service URL: https://simple-app-sbyo2epi3q-ue.a.run.app
 
 ```
 
+## 4. Using App Engine
+
+## – Run the sample hello-world python app
+
+## Creating project files and deploying it following steps in
+
+### **REF : <https://cloud.google.com/appengine/docs/standard/python3/building-app/writing-web-service>**
+
+![Lab2-2 q1.png](../Screenshots/last.png "Lab2-2 q1.png")
+
+```bash
+ vim app.yaml
+$ vim main.py
+$ vim requirementes.txt
+$ mkdir templates
+$ cd templates/
+$ touch index.html
+$ vim index.html 
+$ cd ..
+$ mkdir static
+$ cd static/
+$ vim script.js
+$ vim style.css
+$ cd ..
+$ python3 -m venv env ;source env/bin/activate
+
+$ python3 -m venv env
+source env/bin/activate
+$ pip install -r requirements.txt
+Collecting Flask==2.1.0
+  Downloading Flask-2.1.0-py3-none-any.whl (95 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.2/95.2 KB 1.2 MB/s eta 0:00:00
+Collecting Werkzeug>=2.0
+  Downloading Werkzeug-2.2.2-py3-none-any.whl (232 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.7/232.7 KB 2.9 MB/s eta 0:00:00
+Collecting click>=8.0
+  Downloading click-8.1.3-py3-none-any.whl (96 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.6/96.6 KB 3.8 MB/s eta 0:00:00
+Collecting Jinja2>=3.0
+  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 KB 3.4 MB/s eta 0:00:00
+Collecting itsdangerous>=2.0
+  Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting MarkupSafe>=2.0
+  Downloading MarkupSafe-2.1.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Installing collected packages: MarkupSafe, itsdangerous, click, Werkzeug, Jinja2, Flask
+Successfully installed Flask-2.1.0 Jinja2-3.1.2 MarkupSafe-2.1.2 Werkzeug-2.2.2 click-8.1.3 itsdangerous-2.1.2
+```
+
+```bash
+$ python main.py
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 798-567-523
+127.0.0.1 - - [06/Feb/2023 07:21:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Feb/2023 07:21:15] "GET /static/script.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Feb/2023 07:21:15] "GET /static/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Feb/2023 07:21:15] "GET /favicon.ico HTTP/1.1" 404 -
+```
+
+```bash
+$ vim app.yaml
+$ gcloud app deploy
+You are creating an app for project [mm-iti-cairo-2023].
+WARNING: Creating an App Engine application for a project is irreversible and the region
+cannot be changed. More information about regions is at
+<https://cloud.google.com/appengine/docs/locations>.
+
+Please choose the region where you want your App Engine application located:
+
+ [1] asia-east1    (supports standard and flexible)
+ [2] asia-east2    (supports standard and flexible and search_api)
+ [3] asia-northeast1 (supports standard and flexible and search_api)
+ [4] asia-northeast2 (supports standard and flexible and search_api)
+ [5] asia-northeast3 (supports standard and flexible and search_api)
+ [6] asia-south1   (supports standard and flexible and search_api)
+ [7] asia-southeast1 (supports standard and flexible)
+ [8] asia-southeast2 (supports standard and flexible and search_api)
+ [9] australia-southeast1 (supports standard and flexible and search_api)
+ [10] europe-central2 (supports standard and flexible)
+ [11] europe-west   (supports standard and flexible and search_api)
+ [12] europe-west2  (supports standard and flexible and search_api)
+ [13] europe-west3  (supports standard and flexible and search_api)
+ [14] europe-west6  (supports standard and flexible and search_api)
+ [15] northamerica-northeast1 (supports standard and flexible and search_api)
+ [16] southamerica-east1 (supports standard and flexible and search_api)
+ [17] us-central    (supports standard and flexible and search_api)
+ [18] us-east1      (supports standard and flexible and search_api)
+ [19] us-east4      (supports standard and flexible and search_api)
+ [20] us-west1      (supports standard and flexible)
+ [21] us-west2      (supports standard and flexible and search_api)
+ [22] us-west3      (supports standard and flexible and search_api)
+ [23] us-west4      (supports standard and flexible and search_api)
+ [24] cancel
+Please enter your numeric choice:  18
+
+Creating App Engine application in project [mm-iti-cairo-2023] and region [us-e
+ast1]....done.                                                                 
+Services to deploy:
+
+descriptor:                  [/home/mohamedmamdouh/iti-newpart/GCP/Day4/app_engine/app.yaml]
+source:                      [/home/mohamedmamdouh/iti-newpart/GCP/Day4/app_engine]
+target project:              [mm-iti-cairo-2023]
+target service:              [default]
+target version:              [20230206t072321]
+target url:                  [https://mm-iti-cairo-2023.ue.r.appspot.com]
+target service account:      [App Engine default service account]
+
+
+Do you want to continue (Y/n)?  y
+
+Beginning deployment of service [default]...
+Created .gcloudignore file. See `gcloud topic gcloudignore` for details.
+╔════════════════════════════════════════════════════════════╗
+╠═ Uploading 809 files to Google Cloud Storage              ═╣
+╚════════════════════════════════════════════════════════════╝
+File upload done.
+Updating service [default]...done.                                             
+Setting traffic split for service [default]...done.                            
+Deployed service [default] to [https://mm-iti-cairo-2023.ue.r.appspot.com]
+
+You can stream logs from the command line by running:
+  $ gcloud app logs tail -s default
+
+To view your application in the web browser run:
+  $ gcloud app browse
+mohamedmamdouh@MohamedMamdouh-PC:~/iti-newpart/GCP/Day4/app_engine$ gcloud app browse
+Opening [https://mm-iti-cairo-2023.ue.r.appspot.com] in a new tab in your default browser
+
+```
